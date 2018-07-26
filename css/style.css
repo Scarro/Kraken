@@ -1,0 +1,13 @@
+body {
+	font-size: 12px;
+}
+
+#map {
+	height:300px;
+}
+
+#lista {
+	display: none;
+	height: 301px;
+	overflow: scroll;
+}

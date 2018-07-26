@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ALOJAMIENTOS</title>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<!--		<link rel="stylesheet" href="css/jquery-ui.css" type="text/css"> -->
+		<link rel="stylesheet" href="css/leaflet.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+	<body>
+		<h1>Alojamientos</h1>
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li><a href="#alojamientos" data-toggle="tab">Alojamientos</a></li>
+				<li><a href="#gestion" data-toggle="tab">Gestion</a></li>
+				<li><a href="#about" data-toggle="tab">Sobre mi</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id="alojamientos">
+					<br>
+					<div class="row">
+						<div class="col-md-8 col-sm-8 contenido-scrollspy" data-spy="scroll" data-target="#lista" data-offset="0">
+							<div id="map"></div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<button id="get" type="button" class="btn btn-default">
+								<span class="glyphicon glyphicon-collapse-down"></span> Ver Hoteles
+							</button>
+							<ul class="nav nav-pills nav-stacked" id="lista">
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12" id="hotel">
+					</div>
+				</div>
+				<div class="tab-pane" id="gestion">
+					<img src="img/gestion1.jpg" alt="gestion" class="img-responsive">
+				</div>
+			</div>
+		</div>
+		
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/leaflet.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+	</body>
+</html>
